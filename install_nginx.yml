@@ -1,0 +1,13 @@
+---
+
+- name: Install nginx on localhost
+  hosts: local
+  become: true
+  
+  tasks: 
+    - name: Install nginx
+      apt: 
+        name: apache2
+        state: latest
+
+ 
